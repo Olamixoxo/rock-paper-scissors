@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>rockk paper scissors</title>
+</head>
+<body>
+  <p>
+    Rock Paper Scissors
+  </p>
+  <button onclick="
+  let randomNum = Math.random();
+
+  let compMove = ''
+  if (randomNum >= 0 && randomNum < 1 / 3) {
+    compMove ='rock'
+  } else if (randomNum >= 1 / 3 && randomNum < 2 / 3) {
+     compMove = 'paper'
+  } else if (randomNum >= 2 /3 && randomNum < 1) {
+     compMove = 'scissors' 
+  }
+  
+let result = ''
+  if (compMove === 'rock') {
+    result = 'tie'
+  } else if (compMove === 'paper') {
+    result = 'you lose'
+  } else if (compMove === 'scissors') {
+    result = 'you win'
+  }
+
+  alert(` you picked rock, Computer picked ${compMove}. ${result}`)
+  ">Rock</button>
+
+
+  <button onclick="let randomNume = Math.random()
+
+  let comMove = ''
+  if (randomNume >= 0 && randomNume < 1 /3) {
+    comMove = 'paper'
+  } else if (randomNume >= 1 / 3 && randomNume < 2 / 3) {
+    comMove = 'rock'
+  } else if (randomNume >= 2 / 3 && randomNume < 0) {
+    comMove = 'scissors'
+  }
+
+  let results =''
+
+  if (comMove === 'paper') {
+    results = 'tie'
+  } else if (comMove === 'rock') {
+    results = 'you win'
+  } else if (comMove === 'scissors') {
+    results = 'you lose'
+  }
+  
+  alert(`you picked paper,cComputer picked ${comMove}, ${results}`)
+
+  ">Paper</button>
+
+  <button onclick="let random = Math.random() 
+  
+  let computerMove = ''
+  if (random >= 0 && random < 1 / 3) {
+    computerMove = 'scissors'
+  }else if ( random >= 1 / 3 && random < 2 / 3) {
+    computerMove = 'paper'
+  }else if (random >= 2 / 3 && random < 1) {
+    computerMove = 'rock'
+  }
+
+  let resultx = ''
+  if (computerMove === 'scissors') {
+    resultx === 'tie'
+  }else if (computerMove === 'paper') {
+    resultx === 'you win'
+  }else if (computerMove === 'rock') {
+    resultx === 'you lose'
+  }
+
+  alert(`you picked Scissors, Computer picked ${computerMove}, ${resultx}`)
+  ">Scissors</button>
+</body>
+</html>
