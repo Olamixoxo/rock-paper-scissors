@@ -56,11 +56,12 @@ let result = ''
     results = 'you lose'
   }
   
-  alert(`you picked paper,cComputer picked ${comMove}, ${results}`)
+  alert(`you picked paper,Computer picked ${comMove}, ${results}`)
 
   ">Paper</button>
 
-  <button onclick="let random = Math.random() 
+  <button onclick="
+  let random = Math.random() 
   
   let computerMove = ''
   if (random >= 0 && random < 1 / 3) {
@@ -73,14 +74,14 @@ let result = ''
 
   let resultx = ''
   if (computerMove === 'scissors') {
-    resultx === 'tie'
+    resultx = 'tie'
   }else if (computerMove === 'paper') {
-    resultx === 'you win'
+    resultx = 'you win'
   }else if (computerMove === 'rock') {
-    resultx === 'you lose'
+    resultx = 'you lose'
   }
 
-  alert(`you picked Scissors, Computer picked ${computerMove}, ${resultx}`)
+  alert(`you picked paper, Computer picked ${computerMove}, ${resultx}`)
   ">Scissors</button>
 </body>
 </html>
